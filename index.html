@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Yisus">
+    <meta name="keywords" content="Portafolio, html, css , java script">
+
+    <!--! Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet">
+
+    <!--! Bootstrap Icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!--! CSS personalizado-->
+    <link rel="stylesheet" href="css/menu-footer.css">
+    <link rel="stylesheet" href="css/styles-index.css">
+    <link rel="stylesheet" href="css/animaciones.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header id="headerNav" class="sectionOculto">
+        <nav class="navMenu navFijo">
+
+            <a id="logo" class="links" href="#hero"><img src="media/img/menu-footer/logo2.png" alt="Logo Principal"></a>
+            <button id="btnHamburger" class="style-btn"><i class="bi bi-list"></i></button>
+
+            <ul id="listMenu" class="oculto-ul menu-list">
+                <li><a class="links" href="#aboutMe">Sobre mi</a></li>
+                <li><a class="links" href="#miEnfoque">Mi enfoque</a></li>
+                <li><a class="links" href="#proyectos">Proyectos</a></li>
+                <li><a class="links" href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <!--!Main-->
+    <main>
+
+        <!--!Pantalla de carga-->
+        <section id="pantallaCarga">
+            <!--!Sección Inicial-->
+            <section id="sectionInicial" class="">
+                <div class="contInicial">
+                    <div class="bgInicio">
+
+
+                        <div class="contLoader">
+                            <h2>Bienvenidos</h2>
+                            <div class="loader"></div>
+                            <p>cargando <span class="dot">.</span><span class="dot">.</span><span class="dot">.</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!--!Hero-->
+        <section id="hero" class="section-hero sectionOculto">
+            <div class="bgHero">
+                <div class="hero">
+                    <div class="textoHero">
+                        <img id="imgMostrar" class="" src="media/img/index/foto-pixel1.png" alt="Imagen Hero">
+
+                        <!--! Titulo Hero -->
+                        <h1>
+                            <span>&lt;</span>
+                            <span id="typing"></span>
+                            <span id="cursorBarra0" class="animation1 barraCursor0">|</span>
+                            <span>&gt;</span>
+                        </h1>
+
+                        <div class="contpHero">
+                            <p>
+                                <!--! Texto que se escribe -->
+                                <span id="typing2" class="color"></span><span id="punto" class="spanD-none">.
+                                </span>
+
+                                <!--! Los “...” -->
+                                <span id="opacitySpan" class="spanD-none">
+                                    <span class="dot2">.</span>
+                                    <span class="dot2">.</span>
+                                    <span class="dot2">.</span>
+                                </span>
+
+                                <!--! Cursor secundario -->
+                                <span id="cursorBarra1" class="barraCursor1 animation1 spanD-none ">|</span>
+
+
+                                <!--! Fondo + texto final -->
+                                <span id="textBg" class="bg-text textOpacity">
+                                    <span id="textHero" class="textOpacity">
+                                        Me gusta transformar ideas en experiencias visuales fluidas y
+                                        bien estructuradas.<span id="cursorBarra2"
+                                            class="barraCursor2 animation1 spanD-none ">|</span>
+
+                                    </span>
+                                </span>
+                            </p>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+        </section>
+
+        <!--!Sobre mi-->
+        <section id="aboutMe" class="sectionOculto">
+            <div class="sobreMi">
+                <h2><span>&lt;</span> Sobre mí <span>&gt;</span></h2>
+
+                <p>Soy un desarrollador frontend orientado al diseño y la experiencia de usuario, cuidando el detalle
+                    visual y la coherencia en cada proyecto.</p>
+
+                <p>Trabajo con HTML, CSS y JavaScript centrado en crear interfaces limpias, fluidas y bien
+                    estructuradas. Me obsesiona el detalle visual: creo, pruebo, rompo y vuelvo a crear hasta que cada
+                    interfaz transmite exactamente lo que quiero.</p>
+            </div>
+        </section>
+
+
+        <!--!Mis Servicios-->
+        <section id="miEnfoque">
+            <h2 class="styleH2"><span>&lt;</span> Servicios <span>&gt;</span></h2>
+            <div class="cont-servicios">
+
+                <div class="diseño-web">
+                    <img src="media/img/index/diseño-web.png" alt="Diseño Web">
+                    <p><span>Diseño web</span></p>
+                    <p>Creo interfaces limpias, coherentes y orientadas a la mejor experiencia del usuario.</p>
+                </div>
+
+                <div class="front-end">
+                    <img src="media/img/index/front-end.png" alt="Frontend">
+                    <p><span>Desarrollo frontend</span></p>
+                    <p>Trabajo con HTML, CSS y JavaScript para crear webs sólidas, rápidas y totalmente responsive..</p>
+                </div>
+
+                <div class="visual">
+                    <img src="media/img/index/visual.png" alt="Identidad visual">
+                    <p><span>Identidad visual</span></p>
+                    <p>Construyo coherencia estética, elección de color y composición para dar forma a cada proyecto.
+                    </p>
+                </div>
+
+
+            </div>
+        </section>
+
+        <!--!Proyectos-->
+        <section id="proyectos" class="sectionOculto">
+            <h2 class="styleH2 gridH2 "><span>&lt;</span>Mis Proyectos<span>&gt;</span></h2>
+            <div class="cont-proyectos ">
+
+                <details>
+                    <summary class="contAtencia">AtenciaHomes <i class="bi bi-caret-down-fill"></i></summary>
+                    <div class="body-atencia">
+                        <div class="fondoP">
+                            <p>Proyecto desarrollado íntegramente por mí: diseño, maquetación, estructura y adaptación
+                                responsive.
+                                Atencia Homes es una web inmobiliaria creada con un enfoque claro en limpieza visual y
+                                navegación intuitiva. Combina la base estructural de Bootstrap con estilos
+                                personalizados y un sistema adaptable para distintos dispositivos. Es un proyecto real
+                                para un cliente, cuidando tanto la presentación como la funcionalidad en cada página.
+                            </p>
+
+
+
+                            <div class="cont-icon">
+                                <a class="enlaceWeb" href="https://www.atenciahomes.es/" target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="Abrir sitio web de Atencia Homes en una nueva pestaña">
+                                    <i class="bi bi-globe" aria-hidden="true"></i>
+                                </a> <a class="enlaceGit" href="https://github.com/JESUS323DEV/Atencia-homes-oline"
+                                    target="_blank" rel="noopener noreferrer"
+                                    aria-label="Abrir repertorio en GitHub en una nueva pestaña"><i class="bi bi-github"
+                                        aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+
+                <details>
+                    <summary class="contVanessa">Vanessa<i class="bi bi-caret-down-fill"></i></summary>
+                    <div class="body-vanessa">
+                        <div class="fondo-vanessa">
+                            <p>Proyecto en progreso y desarrollado íntegramente por mí: diseño, maquetación, estructura
+                                y adaptación
+                                responsive.
+                                La web de Vanessa está enfocada en transmitir cercanía, confianza y profesionalidad a
+                                familias que buscan apoyo psicológico y psicopedagógico para niños y adolescentes.
+                                El diseño combina una estética cálida con una estructura clara, ordenada y fácil de
+                                navegar, pensada para guiar al usuario hacia la información que necesita sin saturarle.
+                                Es un proyecto real, creado para reforzar su presencia digital y facilitar el contacto
+                                directo con las familias que acompaña en su labor diaria.</p>
+
+                            <div class="cont-icon">
+                                <a class="enlaceWeb" href="https://jesus323dev.github.io/web-Vanessa/" target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="Abrir sitio web de Atencia Homes en una nueva pestaña">
+                                    <i class="bi bi-globe" aria-hidden="true"></i>
+                                </a> <a class="enlaceGit" href="https://github.com/JESUS323DEV/web-Vanessa"
+                                    target="_blank" rel="noopener noreferrer"
+                                    aria-label="Abrir repertorio en GitHub en una nueva pestaña"><i class="bi bi-github"
+                                        aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </details>
+
+                <details>
+                    <summary class="contChuletas">DevChuletas <i class="bi bi-caret-down-fill"></i></summary>
+                    <div class="body-chuletas">
+                        <div class="fondo-chuletas">
+                            <p>DevChuletas es mi web de apuntes y recursos sobre desarrollo web. Compilo lo que
+                                voy aprendiendo en HTML, CSS, Bootstrap y JavaScript, organizado como una guía
+                                visual y práctica. Ideal para repasar rápido sin perder el estilo.
+                                Cada sección está pensada para ser clara y directa como
+                                si el código te hablara en tu propio idioma. Es mi cuaderno digital. EN PROGRESO</p>
+                            <div class="cont-icon">
+                                <a class="enlaceWeb" href="#" target="_blank" rel="noopener noreferrer"
+                                    aria-label="Abrir sitio web de Atencia Homes en una nueva pestaña">
+                                    <i class="bi bi-globe" aria-hidden="true"></i>
+                                </a> <a class="enlaceGit" href="#" target="_blank" rel="noopener noreferrer"
+                                    aria-label="Abrir repertorio en GitHub en una nueva pestaña"><i class="bi bi-github"
+                                        aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+
+
+
+
+
+            </div>
+
+        </section>
+
+
+        <section id="contacto">
+            <h2 class="styleH2"><span>&lt;</span> Contacto <span>&gt;</span></h2>
+            <div class="cont-contacto">
+                <h4>¿Tienes una idea? Escríbeme.</h4>
+                <p> Me gusta crear webs limpias, visuales y bien pensadas.
+                    Cuéntame qué necesitas y yo me encargo del diseño, la estructura y que todo respire como debe.</p>
+                <a href="#"><i class="bi bi-whatsapp"></i></a>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+
+        <div class="cont-footer">
+            <div class="head-foot">
+                <img src="media/img/menu-footer/logo2.png" alt="Logo Footer">
+                <p>Frontend · Diseño Web · UX/UI</p>
+            </div>
+            <div class="foot">
+                <small>© 2025 Todos los derechos reservados.</small>
+            </div>
+            <div>
+
+                <p><a href="https://github.com/JESUS323DEV"><i class="bi bi-github" aria-hidden="true"></i></a></p>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="js/scripts-main.js"></script>
+
+</body>
+
+</html>

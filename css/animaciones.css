@@ -1,0 +1,205 @@
+/*!============================contenedores de animaciones PANTALLA DE CARGA =========================================*/
+
+/*!=====================CARGANDO=============================*/
+.loader {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #14181f;
+    /* borde principal */
+    border-top: 5px solid #c9a227;
+    /* color distinto para crear el efecto */
+    border-radius: 50%;
+    animation: girar 1s linear infinite;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/*!=====================BARRA PARPADEO=============================*/
+.animation1 {
+
+    animation: parpadeo 0.9s ease-in-out infinite alternate;
+    color: rgb(98, 98, 98);
+}
+
+@keyframes parpadeo {
+
+    0% {
+
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+/*!====================ANIMACIÓN DE "..."=============================*/
+.dot {
+    animation: aparecer 1s infinite;
+}
+
+.dot:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.dot:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.dot:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.dot2 {
+    animation: aparecer 1s infinite;
+    opacity: 0;
+}
+
+.dot2:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.dot2:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.dot2:nth-child(3) {
+    animation-delay: 0.8s;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+/*!============================contenedores de animaciones AL APARECER MENU NAV =========================================*/
+.linkInicio {
+    animation: inicio 3s ease-out forwards;
+}
+
+@keyframes inicio {
+
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.3);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/*!====================LOGO - LINK SOBRE MI Y PROYECTOS=============================*/
+/*!====================LOGO=============================*/
+
+.logoAnimation {
+    animation: logo 3s ease-out forwards;
+    opacity: 0;
+}
+
+@keyframes logo {
+    0% {
+        opacity: 1;
+        transform: translateX(-5rem);
+    }
+
+    40% {
+        transform: rotate(15deg);
+        opacity: 1;
+    }
+
+    60% {
+
+        transform: translateX(2.9rem);
+
+    }
+
+    100% {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+}
+
+/*!====================LINKS=============================*/
+
+.linkAnimation {
+
+    animation: links 3s ease-out forwards;
+    opacity: 0;
+}
+
+.linkAnimation:nth-child(1) {
+    animation-delay: 1s;
+}
+
+.linkAnimation:nth-child(2) {
+    animation-delay: 2s;
+}
+
+.linkAnimation:nth-child(3) {
+    animation-delay: 3s;
+}
+
+@keyframes links {
+    0% {
+        transform: translateX(-8rem);
+
+        opacity: 0;
+    }
+
+
+
+    20% {
+        transform: translateX(1rem);
+        opacity: 1;
+    }
+
+
+
+    100% {
+        transform: translateX(1rem);
+
+        opacity: 1;
+    }
+}
